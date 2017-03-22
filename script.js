@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $("#header").load("header.html");
     $(".mainLink").mouseenter(function(){
     	$(this).find(".sublink").fadeIn(300);
     });
