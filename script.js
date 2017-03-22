@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $("#header").load("header.html");
 
     $(".mainLink").mouseenter(function(){
     	$(this).find(".sublink").fadeIn(300);
@@ -7,7 +6,10 @@ $(document).ready(function(){
     $(".mainLink").mouseleave(function(){
     	$(this).find(".sublink").hide();
     });
-    
+
+    $("#header").load("header.html");
+
+
     showSlides(1);
 });
 
