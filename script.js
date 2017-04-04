@@ -1,6 +1,40 @@
+var load = function (url, success, error) {
+    if (!window.XMLHttpRequest) return;
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === 4) {
+            if (request.status !== 200) {
+                if (error && typeof error === 'function') {
+                    error(request.responseText, request);
+                }
+                return;
+            }
+            if (success && typeof success === 'function') {
+                success(request.responseText, request);
+            }
+        }
+    };
+    request.open('GET', url);
+    request.send();
+};
+
+load(
+    '/header.html',
+    function (data) {
+        var el = document.createElement(el);
+        el.innerHTML = data;
+        var fetch = el.querySelector('#newHeader');
+        var embed = document.querySelector('#header');
+        if (!fetch || !embed) return;
+        embed.innerHTML = fetch.innerHTML;
+
+    }
+);
+
+/*
 function load_home() {
          document.getElementById("header").innerHTML='<object type="text/html" data="header.html"></object>';
-    }
+    }*/
 
 function ready(fn) {
   if (document.readyState != 'loading'){
@@ -17,7 +51,7 @@ function ready(fn) {
 
 ready(function(){
   showSlides(1);
-  load_home();
+  load();
 });
 
 /*$(document).ready(function(){
