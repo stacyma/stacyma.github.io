@@ -1,4 +1,27 @@
-$(document).ready(function(){
+function load_home() {
+         document.getElementById("header").innerHTML='<object type="text/html" data="header.html"></object>';
+    }
+
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn);
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState != 'loading')
+        fn();
+    });
+  }
+}
+
+ready(function(){
+  showSlides(1);
+  load_home();
+});
+
+/*$(document).ready(function(){
+
 
     $(".mainLink").mouseenter(function(){
     	$(this).find(".sublink").fadeIn(300);
@@ -9,9 +32,9 @@ $(document).ready(function(){
 
     $("#header").load("header.html");
 
-
+  
     showSlides(1);
-});
+});*/
 
 
 var slideIndex = 1;
