@@ -1,35 +1,16 @@
-var load = function (url, success, error) {
-    if (!window.XMLHttpRequest) return;
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === 4) {
-            if (request.status !== 200) {
-                if (error && typeof error === 'function') {
-                    error(request.responseText, request);
-                }
-                return;
-            }
-            if (success && typeof success === 'function') {
-                success(request.responseText, request);
-            }
-        }
-    };
-    request.open('GET', url);
-    request.send();
+var request = new XMLHttpRequest();
+
+request.open('GET', '/header.html', true);
+
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    var resp = request.responseText;
+
+    document.querySelector('#header').innerHTML = resp;
+  }
 };
 
-load(
-    '/header.html',
-    function (data) {
-        var el = document.createElement(el);
-        el.innerHTML = data;
-        var fetch = el.querySelector('#newHeader');
-        var embed = document.querySelector('#header');
-        if (!fetch || !embed) return;
-        embed.innerHTML = fetch.innerHTML;
-
-    }
-);
+request.send();
 
 /*
 function load_home() {
@@ -51,7 +32,7 @@ function ready(fn) {
 
 ready(function(){
   showSlides(1);
-  load();
+ // load();
 });
 
 /*$(document).ready(function(){
