@@ -1,3 +1,4 @@
+//import header html into page
 var request = new XMLHttpRequest();
 
 request.open('GET', '/header.html', true);
@@ -12,11 +13,7 @@ request.onload = function() {
 
 request.send();
 
-/*
-function load_home() {
-         document.getElementById("header").innerHTML='<object type="text/html" data="header.html"></object>';
-    }*/
-
+//function to execute function when document is ready
 function ready(fn) {
   if (document.readyState != 'loading'){
     fn();
@@ -32,26 +29,9 @@ function ready(fn) {
 
 ready(function(){
   showSlides(1);
- // load();
 });
 
-/*$(document).ready(function(){
-
-
-    $(".mainLink").mouseenter(function(){
-    	$(this).find(".sublink").fadeIn(300);
-    });
-    $(".mainLink").mouseleave(function(){
-    	$(this).find(".sublink").hide();
-    });
-
-    $("#header").load("header.html");
-
-  
-    showSlides(1);
-});*/
-
-
+//picture slideshow for homepage
 var slideIndex = 1;
 showSlides(slideIndex);
 
