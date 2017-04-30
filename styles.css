@@ -16,9 +16,9 @@ body{
 
 p {
 	color: black;
-	font-family: Georgia;
+	font-family: Georgia, serif;
 	font-size: 16px;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.3px;
 }
 
 hr {
@@ -45,7 +45,7 @@ a:hover, a:active {
 
 /*Font styling for main titles*/
 h1 {
-	font-family: times;
+	font-family: Georgia, serif;
 	font-size: 30px;
 	color: black;
 	font-weight: normal;
@@ -55,7 +55,7 @@ h1 {
 
 /*Font styling for date*/
 h2 { 
-	font-family: times;
+	font-family: Georgia, serif;
 	font-style: italic; 
 	font-weight: normal;
 	font-size: 14px; 
@@ -74,7 +74,7 @@ h2 span {
 }
 
 h3 {
-	font-family: times;
+	font-family: Georgia, serif;
 	font-style: italic; 
 	font-weight: normal;
 	font-size: 16px; 
@@ -86,7 +86,7 @@ h3 {
 
 /*Font styling for subtitle*/
 h4 {
-	font-family: times;
+	font-family: Georgia, serif;
 	font-size: 20px;
 	color: black;
 	font-weight: normal;
@@ -94,6 +94,15 @@ h4 {
 	letter-spacing: 1px;
 }
 
+strong {
+	color: #5EDAE8;
+}
+
+ul, li {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
 
 /* Side bars to show background image*/
 #overlay .hor{
@@ -110,7 +119,7 @@ h4 {
 .mainLinkButton {
 	background-color: transparent;
 	color: black;
-	font-family: times;
+	font-family: times, serif;
 	font-size: 16px;
 	letter-spacing: 2px;
 	border: none;
