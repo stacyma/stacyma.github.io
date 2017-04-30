@@ -19,6 +19,7 @@ p {
 	font-family: Georgia, serif;
 	font-size: 16px;
 	letter-spacing: 0.3px;
+	line-height: 20px;
 }
 
 hr {
@@ -102,6 +103,7 @@ ul, li {
 	font-family: Georgia, serif;
 	font-size: 16px;
 	letter-spacing: 0.3px;
+	line-height: 20px;
 }
 
 /* Side bars to show background image*/
