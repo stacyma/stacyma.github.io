@@ -50,26 +50,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
 }
 
+
 //scroll to top button
-window.onscroll = function(){
-  scrollFunction();
-};
-
 function scrollFunction() {
-      document.getElementById("scrollButton").style.color="blue";
 
-  if (window.scrollY > 20 || document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+  if (window.scrollY > 30 || document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
     document.getElementById("scrollButton").style.display="block";
-    document.getElementById("scrollButton").style.color="pink";
-
   }
   else {
     document.getElementById("scrollButton").style.display="none";
   }
 }
-
-//window.onscroll = scrollFunction;
-//function() { scrollFunction() };
 
 function topFunction() {
   document.body.scrollTop = 0;
