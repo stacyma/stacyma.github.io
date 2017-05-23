@@ -29,9 +29,8 @@ hr {
 	width: 94%;
 }
 
-a, a:link, a:href {
+a:link, a:href {
 	text-decoration: none;
-	color: #888888;
 }
 
 a:visited {
@@ -42,7 +41,6 @@ a:visited {
 a:hover, a:active {
 	color: #E8E8E8;
 	text-decoration: none;
-
 }
 
 /*Font styling for main titles*/
@@ -105,6 +103,11 @@ ul, li {
 	font-size: 16px;
 	letter-spacing: 0.3px;
 	line-height: 20px;
+}
+
+ul a, li a, ul a:visited, li a:visited{
+	text-decoration:none;
+	color: #888888;
 }
 
 /* Side bars to show background image*/
@@ -440,3 +443,9 @@ ul, li {
 	cursor: pointer;
 }
 
+
+.column{
+	display: inline-block;
+	width: 260px;
+	vertical-align: top;
+}
