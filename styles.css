@@ -29,8 +29,9 @@ hr {
 	width: 94%;
 }
 
-a:link{
+a, a:link, a:href {
 	text-decoration: none;
+	color: #888888;
 }
 
 a:visited {
@@ -170,7 +171,6 @@ ul, li {
 	font-family: times, serif;
 	letter-spacing: 2px;
 	font-size: 16px;
-
 } 
 
 /*Change in sublinks while hovering over sublink*/
@@ -180,6 +180,7 @@ ul, li {
 	visibility: visible;
     opacity: 1;
     transition-delay: 0s, 0s;
+    cursor: pointer;
 }
 
 /*Show sublinks when hovering over button or sublinks*/
@@ -193,6 +194,10 @@ ul, li {
 .mainLink:hover .mainLinkButton {
 	background-color: #8FFFF1;
 	border-bottom: 1px solid black;
+}
+
+.mainLink:hover {
+	cursor: pointer;
 }
 
 .mainLink:hover #create {
