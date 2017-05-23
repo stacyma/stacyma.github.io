@@ -39,15 +39,22 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slideImage");
+  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1} //once we reach end of slides moving forward, go to first slide
   if (n < 1) {slideIndex = slides.length} //once we reach beginning of slides moving backward, go to last slide
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   } //make all slides not visible
   slides[slideIndex-1].style.display = "block"; 
+  captionText.innerHTML = dots[slideIndex-1].alt; 
 }
 
 
@@ -67,3 +74,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
