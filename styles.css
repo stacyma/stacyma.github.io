@@ -33,12 +33,12 @@ a:link, a:href {
 	text-decoration: none;
 }
 
-a:visited {
+ul a, li a, ul a:visited, li a:visited, a:visited {
 	color: #888888;
 	text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, ul a:hover, ul a:active {
 	color: #E8E8E8;
 	text-decoration: none;
 }
@@ -105,10 +105,6 @@ ul, li {
 	line-height: 20px;
 }
 
-ul a, li a, ul a:visited, li a:visited{
-	text-decoration:none;
-	color: #888888;
-}
 
 /* Side bars to show background image*/
 #overlay .hor{
@@ -165,7 +161,7 @@ ul a, li a, ul a:visited, li a:visited{
 }
 
 /*Sublinks*/
-.sublink a {
+.sublink a, .sublink a:visited {
 	color: black;
 	font-style: normal;
 	display: block;
