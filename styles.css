@@ -38,7 +38,7 @@ ul a, li a, ul a:visited, li a:visited, a:visited {
 	text-decoration: none;
 }
 
-a:hover, a:active, ul a:hover, ul a:active {
+a, a:hover, a:active, ul a:hover, ul a:active {
 	color: #E8E8E8;
 	text-decoration: none;
 }
