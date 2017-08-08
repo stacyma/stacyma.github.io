@@ -393,7 +393,7 @@ ul, li {
 }
 
 .gallery {
-	column-count: 3;
+	column-count: 2;
 	column-gap: 1em;
 }
 

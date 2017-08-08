@@ -34,10 +34,66 @@
 	<!--BODY-->
 	<div id="bodytext">
 
-		<center>
-		<h2><span><img src="/images/minibamboo1.png" style="width: 15px;">   a future date   <img src="/images/minibamboo2.png" style="width: 15px; padding: 0;"></span></h2>
+		<h1>doodling on paper</h1>
+			<div class="gallery">
 
-		<h1>This page is currently under construction. Come back soon! :)</h1>
+		    <img class="slideImage" src="lettering1.JPG" onclick="openModal(); currentSlide(1);" alt="Spring is nature's way of saying, Let's Party!">
+
+		    <img class="slideImage" src="lettering2.JPG" onclick="openModal(); currentSlide(2);" alt="Oh honey it's just a wave">
+
+		    <img class="slideImage" src="lettering3.JPG" onclick="openModal(); currentSlide(3);" alt="He's very dreamy, but he's not the sun - you are">
+
+		    <img class="slideImage" src="lettering4.JPG" onclick="openModal(); currentSlide(4);" alt="Laugh">
+
+		    <img class="slideImage" src="lettering5.JPG" onclick="openModal(); currentSlide(5);" alt="Greeting card">
+
+		    <img class="slideImage" src="lettering9.JPG" onclick="openModal(); currentSlide(6);" alt="California (personalized gift)">
+
+		  
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		        <img src="lettering1.JPG" style="width: 100%;">
+		    </div>
+
+		    <div class="mySlides">
+		        <img src="lettering2.JPG" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		        <img src="lettering3.JPG" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		        <img src="lettering4.JPG" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		        <img src="lettering5.JPG" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		        <img src="lettering9.JPG" style="width:100%">
+		    </div>
+
+		    
+
+		    <div style="position: absolute; top: 42%; left: -16%; width: 132%;">
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		    </div>
+
+			<div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
+
+		  </div>
+		</div>
+
+		</div>
 
 
 	</div>
